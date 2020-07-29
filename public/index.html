@@ -13,7 +13,7 @@
 
   <body data-account-state="" data-store-state="">
     <header>
-      <h1><a href="/">Tracker</a></h1>
+      <h1><a href="/">Test..</a></h1>
       <nav>
         <ul>
           <li>
@@ -31,12 +31,28 @@
     <main>
       <form class="add-item">
         <div class="item">
-          <label for="input-note">Item</label>
-          <input type="text" name="note" id="input-note" required autofocus>
+          <label for="input-note">Debt Name</label>
+          <input type="text" name="note" id="input-note" placeholder="eg. 2018 Honda Civic" required autofocus>
+        </div>
+        <div class="item">
+          <label for="input-debttype">Debt Type</label>
+          <input type="text" name="debttype" id="input-debttype" required>
+        </div>
+        <div class="item">
+          <label for="input-amount">Remaining Balance ($)</label>
+          <input type="number" name="amount" id="input-amount" step="0.01" required>
+        </div>
+        <div class="item">
+          <label for="input-repayment">Monthly Repayment ($)</label>
+          <input type="number" name="repayment" id="input-repayment" step="0.01" required>
+        </div>
+        <div class="item">
+          <label for="input-repaydate">Next Repayment Date</label>
+          <input type="date" name="repaydate" id="input-repaydate" required>
         </div>
         <div class="amount">
-          <label for="input-amount">Amount</label>
-          <input type="number" name="amount" id="input-amount" required>
+          <label for="input-interest">% Rate</label>
+          <input type="number" name="interest" id="input-interest" step="0.01" required>
         </div>
         <button type="submit">Add item</button>
       </form>
